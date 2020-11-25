@@ -1,0 +1,47 @@
+{
+    "dummy": {
+        "src": "<source>",
+        "orgType": "government",
+        "type": "physical"
+    },
+    "p1": {
+        "src": "<source>",
+        "orgType": "government",
+        "type": "physical"
+    },
+    "p2": {
+        "src": "<source>",
+        "orgType": "government",
+        "type": "online"
+    },
+    "p3": {
+        "src": "<source>",
+        "orgType": "government",
+        "type": "physical"
+    },
+    "p4": {
+        "src": "<source>",
+        "orgType": "government",
+        "type": "online"
+    },
+    "p5": {
+        "src": "<source>",
+        "orgType": "government",
+        "type": "online"
+    },
+    "p6": {
+        "src": "<source>",
+        "orgType": "government",
+        "type": "online"
+    },
+    "p7": {
+        "src": "<source>",
+        "orgType": "private",
+        "type": "physical"
+    },
+    "p8": {
+        "src": "<source>",
+        "orgType": "government",
+        "type": "physical"
+    }
+}

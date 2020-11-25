@@ -8,6 +8,8 @@ import numeral from "numeral"
 
 const data = require("../data.json")
 
+const dataDetails = require("../dataDetails.json")
+
 const IndexPage = () => {
   const sortedData = data.map(d => {
     return {
@@ -20,13 +22,13 @@ const IndexPage = () => {
 
   return <Layout>
     <SEO title="Home" />
-    <h1>It's all about signs!</h1>
+    <h1>Attention is All You Need!</h1>
     <p>We're interested in the ratio of 🟥/(🟦 + 🟥).</p>
-    <ul>
+    <ul style={{padding: 0}}>
       {
         sortedData.map((d, i) => {
-          return <li>
-            <b>{i+1} : {d.filename} | ratio {numeral(d.ratio).format('1.00')}</b>
+          return <li style={{listStyle: `none`}}>
+            <b>ID={d.filename}</b> | ratio {numeral(d.ratio).format('1.00')} | {dataDetails[d.filename]["orgType"]} | {dataDetails[d.filename]["type"]}
             <div>
             <img style={{verticalAlign: "top"}} width="200px" src={`./sign-images/${d.filename}-original.jpg`}/>
             <img style={{verticalAlign: "top"}} width="200px" src={`./sign-images/${d.filename}-mask.jpg`}/>
