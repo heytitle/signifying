@@ -38,7 +38,7 @@ const IndexPage = () => {
     <SEO title="Home" />
     <div style={{width: `650px`}}>
       <h1>Signifying!</h1>
-      <p>When the signboards of Thai organizations signify the presence of their executives.</p>
+      <p>When signboards of some Thai organizations signify the presence of their executives.</p>
       <p stle={{background: `lightgray`}}>
         <b>Remark:</b> Samples below are selected from the internet without any properly predefined selection criteria; hence, <b>statistics derived from them are not respresentative of the population and must be carefully considered when interpreting.</b>
       </p>
