@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Signifying!`,
-    description: `When the signboards of organizations signify the presence of their executives.`,
+    description: `When the signboards of some Thai organizations signify the presence of the main Gatsby configuration files you might need`,
     author: `@gatsbyjs`,
   },
   plugins: [
