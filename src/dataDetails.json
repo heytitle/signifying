@@ -2,66 +2,169 @@
     "dummy": {
         "src": "<source>",
         "orgType": "government",
-        "type": "physical"
+        "type": "physical",
+        "tags": []
     },
     "p1": {
         "src": "https://www.posttoday.com/social/general/545741",
         "orgType": "government",
-        "type": "physical"
+        "type": "physical",
+        "tags": ["bangkok"]
     },
     "p2": {
         "src": "https://www.facebook.com/GCC1111/posts/3583485098375278",
         "orgType": "government",
-        "type": "online"
+        "type": "online",
+        "tags": ["covid19"]
     },
     "p3": {
         "src": "https://thaipublica.org/2015/07/government-advertising-16/",
         "orgType": "government",
-        "type": "physical"
+        "type": "physical",
+        "tags": []
     },
     "p4": {
         "src": "https://ubon.cdd.go.th/2020/04/14/จังหวัดอุบลราชธานี-kick-off-ปฏิ",
         "orgType": "government",
-        "type": "online"
+        "type": "online",
+        "tags": []
     },
     "p5": {
         "src": "https://ww2.ayutthaya.go.th/news/detail/8501",
         "orgType": "government",
-        "type": "online"
+        "type": "online",
+        "tags": []
     },
     "p6": {
         "src": "https://mgronline.com/local/detail/9610000108168",
         "orgType": "government",
-        "type": "physical"
+        "type": "physical",
+        "tags": []
     },
     "p7": {
         "src": "https://www.matichon.co.th/news-monitor/news_1740877",
         "orgType": "private",
-        "type": "physical"
+        "type": "physical",
+        "tags": []
     },
     "p8": {
         "src": "http://oknation.nationtv.tv/blog/opel/2008/04/16/entry-2",
         "orgType": "government",
-        "type": "physical"
+        "type": "physical",
+        "tags": []
     },
     "p9": {
         "src": "https://images.app.goo.gl/HYkyhvoZtdNj7jQP7",
         "orgType": "government",
-        "type": "online"
+        "type": "online",
+        "tags": []
     },
     "p10": {
         "src": "https://drive.google.com/file/d/17EtNwD2b3lT6uV971nkZX-8i7roPEpXV/view",
         "orgType": "government",
-        "type": "online"
+        "type": "online",
+        "tags": []
     },
     "p11": {
         "src": "https://www.navy.mi.th/index.php/today/detail/content_id/18301",
         "orgType": "government",
-        "type": "online"
+        "type": "online",
+        "tags": []
     },
     "p12": {
         "src": "https://www.facebook.com/nanprovince/",
         "orgType": "government",
-        "type": "online"
+        "type": "online",
+        "tags": ["covid19"]
+    },
+    "p2-1": {
+        "src": "https://twitter.com/tanawatofficial/status/1392399024225808384",
+        "orgType": "government",
+        "type": "physical",
+        "tags": ["covid19","bangkok"]
+    },
+    "p2-2": {
+        "src": "https://twitter.com/tanawatofficial/status/1392399024225808384",
+        "orgType": "government",
+        "type": "physical",
+        "tags": ["bangkok"]
+    },
+    "p2-3": {
+        "src": "https://twitter.com/tanawatofficial/status/1392399024225808384",
+        "orgType": "government",
+        "type": "physical",
+        "tags": ["bangkok"]
+    },
+    "p2-4": {
+        "src": "https://twitter.com/tanawatofficial/status/1392399024225808384",
+        "orgType": "government",
+        "type": "physical",
+        "tags": ["bangkok"]
+    },
+    "p2-5": {
+        "src": "https://www.facebook.com/Brandingbyl3oy/photos/a.100299278653383/111386900877954/",
+        "orgType": "government",
+        "type": "physical",
+        "tags": []
+    },
+    "p2-6": {
+        "src": "https://images.app.goo.gl/5ELJ8nf35McpXyDn6",
+        "orgType": "government",
+        "type": "physical",
+        "tags": []
+    },
+    "p2-8": {
+        "src": "https://mgronline.com/greeninnovation/detail/9640000017884",
+        "orgType": "government",
+        "type": "physical",
+        "tags": []
+    },
+    "p2-9": {
+        "src": "https://images.app.goo.gl/xorgc6Qmd6qP6HLs5",
+        "orgType": "government",
+        "type": "physical",
+        "tags": []
+    },
+    "p2-10": {
+        "src": "https://th-th.facebook.com/ballbanofficial/photos/a.1972904679678356/2635171563451661/?type=3&theater",
+        "orgType": "government",
+        "type": "physical",
+        "tags": []
+    },
+    "p2-11": {
+        "src": "",
+        "orgType": "government",
+        "type": "physical",
+        "tags": ["covid19"]
+    },
+    "p2-12": {
+        "src": "",
+        "orgType": "government",
+        "type": "physical",
+        "tags": []
+    },
+    "p2-13": {
+        "src": "",
+        "orgType": "government",
+        "type": "physical",
+        "tags": ["covid19"]
+    },
+    "p2-14": {
+        "src": "",
+        "orgType": "government",
+        "type": "physical",
+        "tags": []
+    },
+    "p2-15": {
+        "src": "",
+        "orgType": "government",
+        "type": "physical",
+        "tags": ["covid19"]
+    },
+    "p2-16": {
+        "src": "",
+        "orgType": "government",
+        "type": "physical",
+        "tags": ["covid19"]
     }
 }

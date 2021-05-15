@@ -1,4 +1,4 @@
-import React from "react"
+import React, {useEffect, useState} from "react"
 import { Link } from "gatsby"
 
 import Layout from "../components/layout"
@@ -25,11 +25,17 @@ const Bubble = ({text}) => {
 }
 
 const IndexPage = () => {
-  const sortedData = data.filter(d => d.filename !== "dummy").map(d => {
+  const [category, setCategory] = useState("covid19")
+  const sortedData = data
+  .filter(d => d.filename !== "dummy").map(d => {
     return {
       ratio: d["red"] / (d["red"] + d["blue"]),
       ...d,
+      details: dataDetails[d.filename]
     }
+  })
+  .filter(d => {
+    return d.details.tags.includes(category)  || category === "all"
   })
 
   sortedData.sort((a, b) => b.ratio - a.ratio)
@@ -42,6 +48,12 @@ const IndexPage = () => {
       <p stle={{background: `lightgray`}}>
         <b>Remark:</b> Samples below are selected from the internet without any properly predefined selection criteria; hence, <b>statistics derived from them are not respresentative of the population and must be carefully considered when interpreting.</b>
       </p>
+      <b>Category</b>{` `}<select value={category} onChange={e => setCategory(e.target.value)}>
+        <option value="covid19">Covid 19</option>
+        <option value="bangkok">Bangkok</option>
+        <option value="all">All</option>
+      </select> ({sortedData.length}/ {data.length-1})
+      <br/> <br/>
       <ul style={{padding: 0, marginLeft: `0px`}}>
         {
           sortedData.map((d, i) => {
@@ -51,13 +63,13 @@ const IndexPage = () => {
               </b> {` `}
               <Bubble text={numeral(d.ratio).format('1.00')}/>
               {` | `}
-              <a href={dataDetails[d.filename]["src"]}>Source(id={d.filename})</a>
+              <a href={d.details.src}>Source(id={d.filename})</a>
               <div style={{display: `inline-block`}}>
                 <img style={{verticalAlign: "top", marginBottom: 0}} width="325px" src={`./sign-images/${d.filename}-original.jpg`}/>
                 <img style={{verticalAlign: "top", marginBottom: 0}} width="325px" src={`./sign-images/${d.filename}-mask.jpg`}/>
                 <div style={{marginTop: `5px`, display:`inline-block`}}>
-                  Organization type: <Bubble text={dataDetails[d.filename]["orgType"]}/> 
-                  Format: <Bubble text={dataDetails[d.filename]["type"]}/>
+                  Organization type: <Bubble text={d.details.orgType}/> 
+                  Format: <Bubble text={d.details.type}/>
                 </div>
               </div>
             </li>
