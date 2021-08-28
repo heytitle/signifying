@@ -9,13 +9,17 @@
         "src": "https://www.posttoday.com/social/general/545741",
         "orgType": "government",
         "type": "physical",
-        "tags": ["bangkok"]
+        "tags": [
+            "bangkok"
+        ]
     },
     "p2": {
         "src": "https://www.facebook.com/GCC1111/posts/3583485098375278",
         "orgType": "government",
         "type": "online",
-        "tags": ["covid19"]
+        "tags": [
+            "covid19"
+        ]
     },
     "p3": {
         "src": "https://thaipublica.org/2015/07/government-advertising-16/",
@@ -75,31 +79,42 @@
         "src": "https://www.facebook.com/nanprovince/",
         "orgType": "government",
         "type": "online",
-        "tags": ["covid19"]
+        "tags": [
+            "covid19"
+        ]
     },
     "p2-1": {
         "src": "https://twitter.com/tanawatofficial/status/1392399024225808384",
         "orgType": "government",
         "type": "physical",
-        "tags": ["covid19","bangkok"]
+        "tags": [
+            "covid19",
+            "bangkok"
+        ]
     },
     "p2-2": {
         "src": "https://twitter.com/tanawatofficial/status/1392399024225808384",
         "orgType": "government",
         "type": "physical",
-        "tags": ["bangkok"]
+        "tags": [
+            "bangkok"
+        ]
     },
     "p2-3": {
         "src": "https://twitter.com/tanawatofficial/status/1392399024225808384",
         "orgType": "government",
         "type": "physical",
-        "tags": ["bangkok"]
+        "tags": [
+            "bangkok"
+        ]
     },
     "p2-4": {
         "src": "https://twitter.com/tanawatofficial/status/1392399024225808384",
         "orgType": "government",
         "type": "physical",
-        "tags": ["bangkok"]
+        "tags": [
+            "bangkok"
+        ]
     },
     "p2-5": {
         "src": "https://www.facebook.com/Brandingbyl3oy/photos/a.100299278653383/111386900877954/",
@@ -135,7 +150,9 @@
         "src": "",
         "orgType": "government",
         "type": "physical",
-        "tags": ["covid19"]
+        "tags": [
+            "covid19"
+        ]
     },
     "p2-12": {
         "src": "",
@@ -147,7 +164,9 @@
         "src": "",
         "orgType": "government",
         "type": "physical",
-        "tags": ["covid19"]
+        "tags": [
+            "covid19"
+        ]
     },
     "p2-14": {
         "src": "",
@@ -159,12 +178,59 @@
         "src": "",
         "orgType": "government",
         "type": "physical",
-        "tags": ["covid19"]
+        "tags": [
+            "covid19"
+        ]
     },
     "p2-16": {
         "src": "",
         "orgType": "government",
         "type": "physical",
-        "tags": ["covid19"]
+        "tags": [
+            "covid19"
+        ]
+    },
+    "p3-1": {
+        "src": "http://www.bangklam.go.th/files/com_networknews/2021-05_75a60bcec363c39.jpg",
+        "orgType": "government",
+        "type": "online",
+        "tags": [
+            "covid19"
+        ]
+    },
+    "p3-2": {
+        "src": "https://www.matichon.co.th/economy/news_2908753",
+        "orgType": "government",
+        "type": "physical",
+        "tags": [
+            "covid19"
+        ]
+    },
+    "p3-3": {
+        "src": "https://www.bbc.com/thai/thailand-58136395",
+        "orgType": "government",
+        "type": "physical",
+        "tags": [
+            "covid19"
+        ],
+        "remark": "Produced but not officially used."
+    },
+    "p3-4": {
+        "src": "https://mobile.twitter.com/noirisaesthetic/status/1427260799081271303",
+        "orgType": "government",
+        "type": "physical",
+        "tags": []
+    },
+    "p3-5": {
+        "src": "https://mobile.twitter.com/kovitw1/status/1426766758040399875",
+        "orgType": "government",
+        "type": "physical",
+        "tags": []
+    },
+    "p3-6": {
+        "src": "https://mgronline.com/local/detail/9640000081148",
+        "orgType": "government",
+        "type": "physical",
+        "tags": []
     }
 }
