@@ -52,7 +52,7 @@ const AreaSymbol = ({ color }) => {
 
 const IndexPage = () => {
   const [queryCategory, setQueryCategory] = useQueryParam(
-    "type",
+    "category",
     StringParam,
     getQueryFromLocation()
   )
