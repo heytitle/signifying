@@ -65,7 +65,7 @@ const IndexPage = () => {
   }
 
   useEffect(() => {
-    setCategory(queryCategory.toLocaleLowerCase() || "covid19")
+    setCategory(queryCategory.toLowerCase() || "covid19")
   }, [])
 
 
