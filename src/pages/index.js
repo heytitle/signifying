@@ -1,15 +1,35 @@
 import React, { useEffect, useState } from "react"
-import { Link } from "gatsby"
 
 import Layout from "../components/layout"
-import Image from "../components/image"
 import SEO from "../components/seo"
 import numeral from "numeral"
+
+
+import { useQueryParam, StringParam } from 'use-query-params'
+
 
 const data = require("../data.json")
 
 const dataDetails = require("../dataDetails.json")
+const categories = [
+  // [key, desc]
+  ["all", "All"],
+  ["covid19", "Covid 19"],
+  ["bangkok", "Bangkok"],
+  ["kmitl", "KMITL"],
+]
+// this is for testing.
 const includeDummy = false
+
+
+const getQueryFromLocation = () => {
+  if(typeof window !== 'undefined' && window) {
+    return "" // useQueryParam will parse query params automatically
+  } else {
+    return "?dummy-param"
+  }
+}
+
 
 const Bubble = ({ text }) => {
   return <b style={{
@@ -31,17 +51,39 @@ const AreaSymbol = ({ color }) => {
 }
 
 const IndexPage = () => {
-  const [category, setCategory] = useState("covid19")
+  const [queryCategory, setQueryCategory] = useQueryParam(
+    "type",
+    StringParam,
+    getQueryFromLocation()
+  )
+
+  const [category, setCategory] = useState()
+
+  const setCategoryValue = (v) => {
+    setQueryCategory(v)
+    setCategory(v)
+  }
+
+  useEffect(() => {
+    setCategory(queryCategory.toLocaleLowerCase() || "covid19")
+  }, [])
+
+
   const sortedData = data
     .filter(d => d.filename !== "dummy").map(d => {
+      const details = dataDetails[d.filename]
       return {
         ratio: d["red"] / (d["red"] + d["blue"]),
         ...d,
-        details: dataDetails[d.filename]
+        details: details,
+        tagsLowerCase: details.tags.map(t => t.toLowerCase())
       }
     })
     .filter(d => {
-      return d.details.tags.includes(category) || category === "all"
+      if (category !== undefined) {
+        return d.tagsLowerCase.includes(category.toLowerCase()) || category === "all"
+      }
+      return true
     })
 
   sortedData.sort((a, b) => b.ratio - a.ratio)
@@ -57,10 +99,8 @@ const IndexPage = () => {
       <p style={{ background: `aliceblue` }}>
         <b>Area Utilization Ratio (AUR)</b> is the ratio between the area <AreaSymbol color="red" /> consumed by the features fo executives and the actual area <AreaSymbol color="blue" /> of each sign.
       </p>
-      <b>Category</b>{` `}<select value={category} onChange={e => setCategory(e.target.value)}>
-        <option value="covid19">Covid 19</option>
-        <option value="bangkok">Bangkok</option>
-        <option value="all">All</option>
+      <b>Category</b>{` `}<select value={category} onChange={e => setCategoryValue(e.target.value)}>
+        { categories.map( ([k, desc]) => <option value={k}>{desc}</option>)}
       </select> ({sortedData.length}/ {data.length - 1})
       <br /> <br />
       <ul style={{ padding: 0, marginLeft: `0px` }}>

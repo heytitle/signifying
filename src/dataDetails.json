@@ -49,7 +49,7 @@
         "src": "https://www.matichon.co.th/news-monitor/news_1740877",
         "orgType": "private",
         "type": "physical",
-        "tags": []
+        "tags": ["KMITL"]
     },
     "p8": {
         "src": "http://oknation.nationtv.tv/blog/opel/2008/04/16/entry-2",
@@ -232,5 +232,29 @@
         "orgType": "government",
         "type": "physical",
         "tags": []
+    },
+    "p4-1": { 
+        "src": "https://mobile.twitter.com/quote_wiwata/status/1470652827814924290/photo/1",
+        "orgType": "private",
+        "type": "physical",
+        "tags": ["KMITL"]
+    },
+    "p4-2": { 
+        "src": "https://mobile.twitter.com/quote_wiwata/status/1470652827814924290/photo/1",
+        "orgType": "private",
+        "type": "physical",
+        "tags": ["KMITL"]
+    },
+    "p4-3": { 
+        "src": "https://youtu.be/65I82vg4AK4?t=184",
+        "orgType": "private",
+        "type": "physical",
+        "tags": ["KMITL"]
+    },
+    "p4-4": { 
+        "src": "https://youtu.be/65I82vg4AK4?t=184",
+        "orgType": "government",
+        "type": "physical",
+        "tags": ["covid19"]
     }
 }
